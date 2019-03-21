@@ -21,7 +21,7 @@ const resolvers = {
             return ctx.prisma.deleteLink({id: args.id}, info)
         },
         updateLink: (root, args, ctx, info) => {
-            return ctx.prisma.updateLink(args, {where: {id: args.id}}, info)
+            return ctx.prisma.updateLink({where: {id: args.id}, data: {url: args.url, description: args.description}}, info)
         }
         // updateLink: (parents, args) => {
         //     const link = links.find(link => link.id === `link-${args.id}`)
