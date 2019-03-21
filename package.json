@@ -1,0 +1,11 @@
+{
+  "name": "graphql-getting-started",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/clintKunz/graphql-getting-started.git",
+  "author": "<clintkunz@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "graphql-yoga": "^1.17.4"
+  }
+}
