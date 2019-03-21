@@ -6,6 +6,9 @@ const resolvers = {
         info: () => `This is the API of a Hackernews Clone`,
         feed: (root, args, ctx, info) => {
             return ctx.prisma.links()
+        },
+        link: (root, args, ctx, info) => {
+            return ctx.prisma.link({id: args.id}, info)
         }
         //link: (parent, args) => links.find(link => link.id === args.id)
     },
