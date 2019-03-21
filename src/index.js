@@ -24,6 +24,16 @@ const resolvers = {
             }
             links.push(link)
             return link
+        },
+        updateLink: (parents, args) => {
+            const link = links.find(link => link.id === `link-${args.id}`)
+            link.url = args.url;
+            link.description = args.description;
+            return link;
+        },
+        deleteLink: (parents, args) => {
+            links = links.filter(link => link.id !== `link-${args.id}`)
+            return `You deleted link-${args.id}`;
         }
     }
 }
