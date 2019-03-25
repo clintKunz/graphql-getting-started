@@ -9,7 +9,10 @@
     "start": "nodemon src/index.js"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "graphql-yoga": "^1.17.4",
-    "nodemon": "^1.18.10"
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^1.18.10",
+    "prisma-client-lib": "^1.29.1"
   }
 }

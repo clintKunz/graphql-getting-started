@@ -1,0 +1,12 @@
+#endpoint: ''
+endpoint: https://us1.prisma.sh/clint-kunz-3ac3a4/graphql-getting-started/dev
+
+datamodel: datamodel.prisma
+
+generate: 
+  - generator: javascript-client
+    output: ../src/generated/prisma-client
+
+hooks: 
+  post-deploy:
+    - prisma generate
